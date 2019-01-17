@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - '8'
+branches:
+  only:
+    - master
+before_install:
+  - npm config set //registry.npmjs.org/:_authToken $NPM_API_KEY
+deploy:
+  - provider: npm
+    email: luke@c2cschools.com
+    skip_cleanup: true
+    api_key: "$NPM_API_KEY"
+    on:
+      all_branches: true
+env:
+  global:
+    # NPM_API_KEY
+    - secure: "fM1P0e51QOd3gOow0640vK5QxZGEJaS4tJgI/n7e9EbeJP+aKicaPxkjQpajyyUN3GJtn2ooMAPozFgB7ianpXjCL1uBfZLKKfzI2ON1IjbeR39bE1IuSmjEmRQtxMJdvtkyGpb6BpvZyV4s/YHW+jn8+IzoEsdcTi9sr+nU8pYOiNA6f4AKLvfursKNsaPH5nBGO78PgvXp1MpgYoruMfTSovaqQ+qXJ6ZpiwiX5bOrvCgLK6xql4tougz9JN8mwdz336Nlc1mk4byGBYBCMFitwP/mZbN4K8JKdq7LNjIVFNTHoVDfeqrEdm0a8fb7u1x/ZuUVKjc3Fdpk3e2WvLI2MaGBi3qmPfb+EEH028ce+ik/QsXEib0X2+X7DUnO/D99iunVBA1sW+4bZGHPI+NggIROpmqyxibED3erPMrFcs6IG+8lMXmi6MgVI/vbm0YONKbZI6OdxRLcoKDBHizLhqKM7gVHR0TDPwKcCOyryZgo1QZtvwRE9VLDNKqOQfkm55tcaVFr32jrtAIIFkVuawIrhduBYSgVXbyY+5EvStmnlV1J7vzi35ErQ4M1RKaSnGR2zQaUShVcUgYnfvtIyNMig24i6WpSwt+NxUCW0BuWqceR9Yk6JovjeVxpho2B5/I9A3Rt5VnNfG6HvU2Kx5j/2TQb6hemUFuc/NE="
+notifications:
+  slack:
+    secure: "I26w6BOZxOvrs/1dBdrT+YjKMKF1MkK9hmGyIMkTkmrP1XSFQVTrL0B2QZYjFyvc8X+cm634WLthAQWma4pMfKNeeELvrgP5qCFi6TzNOTToTtNbNwhgQXLY3M5/KjnGiAAs8rrngqvem6cjFl6J2d5B9FSzsZq45dSsu0Ph46bfk5GE+YfniJirLij3jvDO8AbEhl6spNJFeBleXb8dAi2kicQXJbdn0u/QXPPxM5REMmj+UNsQ0Z98Qojv5qH5pplc0GPGdu5qjafVa8mU2thqCdmOgdtWaHc3zWV2M36c1u7S8BvKMWZSecffDUMncCW6cJMEdjPonC8dPOsnVDV2+wEmI7QyK7RQ2eC1Gd0MzTr1hgxrLUrnsqn0p5tHwvOCRZH7HMC0+YAtwlCA60veH1edbLGcc4wcUZ6ZzHn3tIpYjO8AzMYaj/4N+sqFCwL4a7++OrpYQaHIGbz0lTvaTgqZVmcNAgGKMBJyWo+NCtPE6oJiMTd1GD+Es0AbhOMsGLf1QhXH6/A2gx8mAV4i9CmqVh5WCkdDi0qpD3MK9em5D0w7RBZVKYXCTZHbCpJ28FxxwQuTkYLsIDht5BMQrAZ9yhTVG6eoL9wGzJwCK6W386oXxhcxk0gg4bnBp3cL3AI794GwTlXfRMdTzTrSBpHMLvkI4IMQIFdXDgw="
+
