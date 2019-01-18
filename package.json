@@ -1,7 +1,9 @@
 {
   "name": "@corefw/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Shareable Core Framework ESLint config.",
+  "license": "MIT",
+  "author": "Kevin Sanders <kevin@c2cschools.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/corefw/core-eslint-config.git"
@@ -14,18 +16,18 @@
   },
   "homepage": "https://github.com/corefw/core-eslint-config#readme",
   "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
-    "//test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "author": "Kevin Sanders <kevin@c2cschools.com>",
-  "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=5.0.0",
-    "@corefw/eslint-plugin-corefw": ">=1.0"
+    "eslint": ">=5",
+    "@corefw/eslint-plugin-corefw": ">=1"
   },
   "devDependencies": {
     "@corefw/eslint-plugin-corefw": "^1.0.2",
