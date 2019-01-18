@@ -1,0 +1,162 @@
+[
+	{
+		"ruleId": "strict",
+		"severity": 2,
+		"message": "Use the global form of 'use strict'.",
+		"line": 5,
+		"column": 1,
+		"nodeType": "Program",
+		"endLine": 15,
+		"endColumn": 13
+	},
+	{
+		"ruleId": "space-before-blocks",
+		"severity": 2,
+		"message": "Missing space before opening brace.",
+		"line": 5,
+		"column": 10,
+		"nodeType": "ClassBody",
+		"endLine": 11,
+		"endColumn": 2,
+		"fix": {
+			"range": [
+				125,
+				125
+			],
+			"text": " "
+		}
+	},
+	{
+		"ruleId": "@corefw/corefw/block-padding",
+		"severity": 2,
+		"message": "One newline required at beginning of block.",
+		"line": 7,
+		"column": 9,
+		"nodeType": "BlockStatement",
+		"fix": {
+			"range": [
+				137,
+				137
+			],
+			"text": "\n"
+		}
+	},
+	{
+		"ruleId": "space-before-blocks",
+		"severity": 2,
+		"message": "Missing space before opening brace.",
+		"line": 7,
+		"column": 9,
+		"nodeType": "BlockStatement",
+		"endLine": 10,
+		"endColumn": 3,
+		"fix": {
+			"range": [
+				136,
+				136
+			],
+			"text": " "
+		}
+	},
+	{
+		"ruleId": "no-console",
+		"severity": 2,
+		"message": "Unexpected console statement.",
+		"line": 8,
+		"column": 3,
+		"nodeType": "MemberExpression",
+		"messageId": "unexpected",
+		"endLine": 8,
+		"endColumn": 14
+	},
+	{
+		"ruleId": "space-in-parens",
+		"severity": 2,
+		"message": "There must be a space inside this paren.",
+		"line": 8,
+		"column": 14,
+		"nodeType": "Program",
+		"fix": {
+			"range": [
+				152,
+				152
+			],
+			"text": " "
+		}
+	},
+	{
+		"ruleId": "space-in-parens",
+		"severity": 2,
+		"message": "There must be a space inside this paren.",
+		"line": 8,
+		"column": 22,
+		"nodeType": "Program",
+		"fix": {
+			"range": [
+				159,
+				159
+			],
+			"text": " "
+		}
+	},
+	{
+		"ruleId": "@corefw/corefw/block-padding",
+		"severity": 2,
+		"message": "Newline(s) not allowed at end of block.",
+		"line": 10,
+		"column": 2,
+		"nodeType": "BlockStatement",
+		"fix": {
+			"range": [
+				161,
+				163
+			],
+			"text": "\n"
+		}
+	},
+	{
+		"ruleId": "space-infix-ops",
+		"severity": 2,
+		"message": "Operator '=' must be spaced.",
+		"line": 13,
+		"column": 8,
+		"nodeType": "VariableDeclarator",
+		"fix": {
+			"range": [
+				176,
+				177
+			],
+			"text": " = "
+		}
+	},
+	{
+		"ruleId": "space-in-parens",
+		"severity": 2,
+		"message": "There should be no spaces inside this paren.",
+		"line": 15,
+		"column": 10,
+		"nodeType": "Program",
+		"fix": {
+			"range": [
+				199,
+				200
+			],
+			"text": ""
+		}
+	},
+	{
+		"ruleId": "semi",
+		"severity": 2,
+		"message": "Missing semicolon.",
+		"line": 15,
+		"column": 13,
+		"nodeType": "ExpressionStatement",
+		"fix": {
+			"range": [
+				201,
+				201
+			],
+			"text": ";"
+		}
+	}
+]
