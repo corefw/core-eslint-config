@@ -7,7 +7,8 @@
 	"plugins": [
 		"@corefw/eslint-plugin-corefw",
 		"jsdoc",
-		"json"
+		"json",
+		"markdown"
 	],
 	"rules": {
 		"strict": [
@@ -196,7 +197,7 @@
 		"new-cap": [
 			"error",
 			{
-				"capIsNewExceptionPattern": "^[A-Z0-9]+$"
+				"capIsNewExceptionPattern": "\\.?[A-Z0-9]+$"
 			}
 		],
 		"new-parens": "error",
@@ -306,5 +307,14 @@
 		"before": false,
 		"afterEach": false,
 		"it": false
-	}
+	},
+	"overrides": [{
+		"files": ["**/*.md"],
+		"rules": {
+			"no-undef": "off",
+			"no-unused-vars": "off",
+			"no-console": "off",
+			"strict": "off"
+		}
+	}]
 }
