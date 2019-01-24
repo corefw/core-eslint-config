@@ -197,7 +197,7 @@
 		"new-cap": [
 			"error",
 			{
-				"capIsNewExceptionPattern": "\\.?[A-Z0-9]+$"
+				"capIsNewExceptionPattern": "^(.*\\.)?[A-Z0-9]+$"
 			}
 		],
 		"new-parens": "error",
@@ -306,6 +306,7 @@
 		"beforeEach": false,
 		"before": false,
 		"afterEach": false,
+		"after": false,
 		"it": false
 	},
 	"overrides": [{
