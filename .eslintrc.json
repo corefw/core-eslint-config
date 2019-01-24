@@ -289,7 +289,7 @@
 				"next": "return"
 			}
 		],
-		"@corefw/corefw/block-padding": false,
+		"@corefw/corefw/block-padding": "off",
 		"@corefw/corefw/no-arrow-functions": "error",
 		"@corefw/corefw/use-strict-padding": "error",
 		"jsdoc/require-hyphen-before-param-description": [

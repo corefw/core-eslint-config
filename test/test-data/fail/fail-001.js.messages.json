@@ -28,21 +28,6 @@
 		}
 	},
 	{
-		"ruleId": "@corefw/corefw/block-padding",
-		"severity": 2,
-		"message": "One newline required at beginning of block.",
-		"line": 7,
-		"column": 9,
-		"nodeType": "BlockStatement",
-		"fix": {
-			"range": [
-				137,
-				137
-			],
-			"text": "\n"
-		}
-	},
-	{
 		"ruleId": "space-before-blocks",
 		"severity": 2,
 		"message": "Missing space before opening brace.",
@@ -98,21 +83,6 @@
 				159
 			],
 			"text": " "
-		}
-	},
-	{
-		"ruleId": "@corefw/corefw/block-padding",
-		"severity": 2,
-		"message": "Newline(s) not allowed at end of block.",
-		"line": 10,
-		"column": 2,
-		"nodeType": "BlockStatement",
-		"fix": {
-			"range": [
-				161,
-				163
-			],
-			"text": "\n"
 		}
 	},
 	{

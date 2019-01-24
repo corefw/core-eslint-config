@@ -55,7 +55,7 @@ describe( "ESLint Validation", function () {
 				let resultMessages		= report.results[ 0 ].messages;
 				let expectedMessages	= require( file + ".messages.json" );
 
-				// console.log(JSON.stringify(resultMessages,null,"  "));
+				// console.log( JSON.stringify( resultMessages, null, "  " ) );
 				// console.log(expectedMessages);
 				// console.log(resultMessages);
 
