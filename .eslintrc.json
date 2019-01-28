@@ -82,7 +82,7 @@
 		"no-alert": "error",
 		"no-caller": "error",
 		"no-div-regex": "error",
-		"no-else-return": "error",
+		"no-else-return": 0,
 		"no-eq-null": "error",
 		"no-eval": "error",
 		"no-extend-native": "error",
@@ -289,7 +289,7 @@
 				"next": "return"
 			}
 		],
-		"@corefw/corefw/block-padding": "off",
+		"@corefw/corefw/block-padding": 0,
 		"@corefw/corefw/no-arrow-functions": "error",
 		"@corefw/corefw/use-strict-padding": "error",
 		"jsdoc/require-hyphen-before-param-description": [
