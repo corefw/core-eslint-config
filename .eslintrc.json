@@ -241,13 +241,7 @@
 		"require-jsdoc": "error",
 		"semi-spacing": "error",
 		"semi": "error",
-		"keyword-spacing": [
-			"error",
-			{
-				"before": true,
-				"after": true
-			}
-		],
+		"keyword-spacing": "off",
 		"space-before-blocks": "error",
 		"space-before-function-paren": [
 			"error",
