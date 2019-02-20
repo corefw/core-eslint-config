@@ -213,7 +213,7 @@
 		"no-multiple-empty-lines": [
 			"error",
 			{
-				"max": 1
+				"max": 8
 			}
 		],
 		"no-empty-function": "error",
@@ -221,7 +221,7 @@
 		"no-new-object": "error",
 		"no-restricted-syntax": "error",
 		"no-spaced-func": "error",
-		"no-trailing-spaces": "error",
+		"no-trailing-spaces": "off",
 		"no-underscore-dangle": "off",
 		"no-unneeded-ternary": "error",
 		"object-curly-spacing": [
