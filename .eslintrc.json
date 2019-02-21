@@ -243,13 +243,7 @@
 		"semi": "error",
 		"keyword-spacing": "off",
 		"space-before-blocks": "error",
-		"space-before-function-paren": [
-			"error",
-			{
-				"named": "never",
-				"anonymous": "always"
-			}
-		],
+		"space-before-function-paren": "off",
 		"space-in-parens": [
 			"error",
 			"always",
