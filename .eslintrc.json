@@ -201,10 +201,7 @@
 			}
 		],
 		"new-parens": "error",
-		"newline-after-var": [
-			"error",
-			"always"
-		],
+		"newline-after-var": "off",
 		"no-array-constructor": "error",
 		"no-continue": "error",
 		"no-inline-comments": "off",
@@ -269,14 +266,7 @@
 				"ignoreRegExpLiterals": true
 			}
 		],
-		"padding-line-between-statements": [
-			"error",
-			{
-				"blankLine": "always",
-				"prev": "*",
-				"next": "return"
-			}
-		],
+		"padding-line-between-statements": "off",
 		"@corefw/corefw/block-padding": 0,
 		"@corefw/corefw/no-arrow-functions": "error",
 		"@corefw/corefw/use-strict-padding": "error",
