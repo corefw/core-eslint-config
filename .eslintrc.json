@@ -1,4 +1,7 @@
 {
+	"parserOptions": {
+		"ecmaVersion": 8
+	},
 	"env": {
 		"browser": false,
 		"node": true,
@@ -15,10 +18,7 @@
 			"error",
 			"global"
 		],
-		"comma-dangle": [
-			"error",
-			"always-multiline"
-		],
+		"comma-dangle": "off",
 		"no-cond-assign": "error",
 		"no-console": "error",
 		"no-constant-condition": "error",
@@ -31,7 +31,7 @@
 		"no-empty": "off",
 		"no-ex-assign": "error",
 		"no-extra-boolean-cast": "error",
-		"no-extra-parens": "error",
+		"no-extra-parens": "off",
 		"no-extra-semi": "error",
 		"no-func-assign": "error",
 		"no-inner-declarations": "error",
@@ -66,7 +66,7 @@
 		"accessor-pairs": "error",
 		"block-scoped-var": "error",
 		"complexity": "error",
-		"consistent-return": "error",
+		"consistent-return": "off",
 		"curly": "error",
 		"default-case": "error",
 		"dot-notation": "error",
@@ -89,14 +89,14 @@
 		"no-extra-bind": "error",
 		"no-fallthrough": "error",
 		"no-floating-decimal": "error",
-		"no-implicit-coercion": "error",
+		"no-implicit-coercion": "off",
 		"no-implied-eval": "error",
-		"no-invalid-this": "error",
+		"no-invalid-this": "off",
 		"no-iterator": "error",
 		"no-labels": "error",
 		"no-lone-blocks": "error",
 		"no-loop-func": "error",
-		"no-multi-spaces": "error",
+		"no-multi-spaces": "off",
 		"no-multi-str": "error",
 		"no-native-reassign": "error",
 		"no-new-func": "error",
@@ -119,7 +119,7 @@
 			"off"
 		],
 		"no-useless-call": "error",
-		"no-useless-concat": "error",
+		"no-useless-concat": "off",
 		"no-void": "error",
 		"no-warning-comments": "off",
 		"no-with": "error",
@@ -128,7 +128,13 @@
 		"wrap-iife": "error",
 		"yoda": "error",
 		"no-unexpected-multiline": "error",
-		"no-unused-vars": "error",
+		"no-unused-vars": [
+			"error",
+			{
+				"args": "none",
+				"caughtErrors": "none"
+			}
+		],
 		"no-use-before-define": [
 			"error",
 			"nofunc"
@@ -142,7 +148,11 @@
 			"always"
 		],
 		"block-spacing": "error",
-		"brace-style": "error",
+		"brace-style": [
+			"error",
+			"1tbs",
+			{ "allowSingleLine": true }
+		],
 		"camelcase": "error",
 		"comma-spacing": "error",
 		"comma-style": "error",
@@ -150,10 +160,7 @@
 			"error",
 			"always"
 		],
-		"consistent-this": [
-			"error",
-			"me"
-		],
+		"consistent-this": "off",
 		"eol-last": "error",
 		"func-style": [
 			"error",
@@ -176,7 +183,8 @@
 			{
 				"multiLine": {
 					"beforeColon": false,
-					"afterColon": true
+					"afterColon": true,
+					"mode": "minimum"
 				},
 				"align": {
 					"beforeColon": true,
@@ -194,18 +202,13 @@
 		],
 		"linebreak-style": "error",
 		"max-nested-callbacks": "error",
-		"new-cap": [
-			"error",
-			{
-				"capIsNewExceptionPattern": "^(.*\\.)?[A-Z0-9]+$"
-			}
-		],
+		"new-cap": "off",
 		"new-parens": "error",
 		"newline-after-var": "off",
 		"no-array-constructor": "error",
 		"no-continue": "error",
 		"no-inline-comments": "off",
-		"no-lonely-if": "error",
+		"no-lonely-if": "off",
 		"no-mixed-spaces-and-tabs": "error",
 		"no-multiple-empty-lines": [
 			"error",
@@ -213,7 +216,7 @@
 				"max": 8
 			}
 		],
-		"no-empty-function": "error",
+		"no-empty-function": "off",
 		"no-nested-ternary": "error",
 		"no-new-object": "error",
 		"no-restricted-syntax": "error",
@@ -225,10 +228,7 @@
 			"error",
 			"always"
 		],
-		"one-var": [
-			"error",
-			"never"
-		],
+		"one-var": "off",
 		"operator-assignment": "error",
 		"operator-linebreak": "error",
 		"quotes": [
@@ -250,9 +250,7 @@
 		],
 		"space-infix-ops": "error",
 		"space-unary-ops": "error",
-		"spaced-comment": [
-			"warn"
-		],
+		"spaced-comment": "off",
 		"wrap-regex": "error",
 		"max-len": [
 			"error",
@@ -268,8 +266,8 @@
 		],
 		"padding-line-between-statements": "off",
 		"@corefw/corefw/block-padding": 0,
-		"@corefw/corefw/no-arrow-functions": "error",
-		"@corefw/corefw/use-strict-padding": "error",
+		"@corefw/corefw/no-arrow-functions": "off",
+		"@corefw/corefw/use-strict-padding": "off",
 		"jsdoc/require-hyphen-before-param-description": [
 			"error",
 			"always"
@@ -285,7 +283,8 @@
 		"before": false,
 		"afterEach": false,
 		"after": false,
-		"it": false
+		"it": false,
+		"Core": false
 	},
 	"overrides": [{
 		"files": ["**/*.md"],
