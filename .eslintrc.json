@@ -87,7 +87,7 @@
 		"no-eval": "error",
 		"no-extend-native": "error",
 		"no-extra-bind": "error",
-		"no-fallthrough": "off",
+		"no-fallthrough": "error",
 		"no-floating-decimal": "error",
 		"no-implicit-coercion": "off",
 		"no-implied-eval": "error",
