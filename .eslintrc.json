@@ -65,10 +65,10 @@
 		"valid-typeof"                                  : "error",
 		"accessor-pairs"                                : "error",
 		"block-scoped-var"                              : "error",
-		"complexity"                                    : "error",
+		"complexity"                                    : "off",
 		"consistent-return"                             : "off",
 		"curly"                                         : "error",
-		"default-case"                                  : "error",
+		"default-case"                                  : "off",
 		"dot-notation"                                  : "error",
 		"dot-location"                                  : [
 			"error",
